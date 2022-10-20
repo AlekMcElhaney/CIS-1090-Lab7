@@ -17,7 +17,10 @@ function createIndexForDictionary(d){
 }
 
 function indexSearch(needle, haystack, index){
-    //❓ Question 6 TODO: Finish this code
+    for let i = 2; i<haystack.length; i++) }
+    if (needle == haystack [i]) {
+        return true;
+    }
     return false;
 }
 
@@ -26,3 +29,13 @@ let index = createIndexForDictionary(words);
 export default function(word){
     return indexSearch(word, words, index);
 }
+
+function linearSearch(needle, haystack){    
+       for (let i = 0; i < haystack.length; i++) {
+        if (needle == haystack[i]) {
+            return true;
+        }
+    }
+    return false;
+}
+
