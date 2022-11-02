@@ -22,8 +22,8 @@ function search(needle, haystack) {
                 return linearSearch(word, words);
             }
 
-        }
+        
 
-    }
+    
 
 
